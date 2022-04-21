@@ -78,6 +78,23 @@ class Play extends Phaser.Scene {
             this.add.text(game.config.width/2, game.config.height/2 + 64, 'Press (R) to Restart or ← to Menu', scoreConfig).setOrigin(0.5);
             this.gameOver = true;
         }, null, this);
+        //initialize time; 
+        this.remainingTime = this.clock.getRemainingSeconds();
+        // display time left
+        let timeConfig = {
+            fontFamily: 'Courier',
+            fontSize: '28px',
+            backgroundColor: '#F3B141',
+            color: '#843605',
+            align: 'right',
+            padding: {
+                top: 5,
+                bottom: 5,
+            },
+            fixedWidth: 120
+        }
+        this.timeLeft = this.add.text(game.config.width/2 - borderPadding*4, borderUISize + borderPadding*2, 'Time:'+this.remainingTime, timeConfig);
+
     }
 
     update() {
@@ -89,6 +106,10 @@ class Play extends Phaser.Scene {
         if(this.gameOver && Phaser.Input.Keyboard.JustDown(keyLEFT)) {
             this.scene.start("menuScene");
         }
+
+        //update timer
+        this.remainingTime = this.clock.getRemainingSeconds();
+        this.timeLeft.text = 'Time:'+this.remainingTime;
 
         this.starfield.tilePositionX -= 4;  // update tile sprite
 
