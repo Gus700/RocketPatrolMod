@@ -13,6 +13,8 @@ Create a new spaceship type (w/ new artwork) that's smaller, moves faster, and i
 Create new artwork for all of the in-game assets (rocket, spaceships, explosion) (20)
     had to create new pixel art for white ships, rocket and new animation sequence for the explosion
 
+Display the time remaining (in seconds) on the screen (10)
+
 Implement a new timing/scoring mechanism that adds time to the clock for successful hits (20)
 
 */
