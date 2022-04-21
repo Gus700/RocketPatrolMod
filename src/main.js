@@ -1,13 +1,18 @@
-// Gustavo Cruz Martinez
-// Built on top of proffessor's Altice base tutorial code for rocket patrol
-// Time to complete so far: 3 hours
+/* 
+Gustavo Cruz Martinez
+Built on top of proffessor's Altice base tutorial code for rocket patrol
+Time to complete so far: 6 hours
 
-//Changes made, following the assignment description
-//
-// Create a new spaceship type (w/ new artwork) that's smaller, moves faster, and is worth more points (20)
-//      -This was mainly acomplished but creating a new instance of the Spaceship class, with modified positioning and 
-//      a 50 point value. Speed was also altered to scale with the selected dificulty, the small red ship moves 
-//      1.5 faster than the rest
+Changes made, following the assignment description
+
+Create a new spaceship type (w/ new artwork) that's smaller, moves faster, and is worth more points (20)
+    This was mainly acomplished but creating a new instance of the Spaceship class, with modified positioning and 
+    a 50 point value. Speed was also altered to scale with the selected dificulty, the small red ship moves 
+    1.5 faster than the rest
+
+Create new artwork for all of the in-game assets (rocket, spaceships, explosion) (20)
+    had to create new pixzl art for white ships, rocket and new animation sequence for the explosion
+*/
 
 
 let config = {
