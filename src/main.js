@@ -25,7 +25,8 @@ Implement a new timing/scoring mechanism that adds time to the clock for success
     Since the displayed timer at the top of the screen is tied to this delay, it correctly updates the time given by
     the corresponding ship. Gameplay also lasts realtive to the time displayed on screen
 
-
+Implement mouse control for player movement and mouse click to fire (20 points)
+    By far this is the one that I am taking the longest to research on a find out how to the cordinates for my mouse
 */
 
 
@@ -44,3 +45,5 @@ let borderPadding = borderUISize / 3;
 
 // reserve keyboard variables
 let keyF, keyR, keyLEFT, keyRIGHT;
+// reserve mouse variable
+let mouseIn
