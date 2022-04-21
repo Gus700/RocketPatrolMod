@@ -8,7 +8,7 @@ Changes made, following the assignment description
 Create a new spaceship type (w/ new artwork) that's smaller, moves faster, and is worth more points (20 points)
     This was mainly acomplished but creating a new instance of the Spaceship class, with modified positioning and 
     a 50 point value. Speed was also altered to scale with the selected dificulty, the small red ship moves 
-    1.5 faster than the rest
+    1.75 times faster than the rest
 
 Create new artwork for all of the in-game assets (rocket, spaceships, explosion) (20 points)
     had to create new pixel art for white ships, rocket and new animation sequence for the explosion

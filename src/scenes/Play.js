@@ -26,7 +26,7 @@ class Play extends Phaser.Scene {
         this.ship03 = new Spaceship(this, game.config.width, borderUISize*6 + borderPadding*4, 'spaceship', 0, 10, 1000).setOrigin(0,0,5);
         //red ship that offers bonus points
         this.Bship04 = new Spaceship(this, game.config.width + borderUISize*8, borderUISize*3.5, 'bonus_ship', 0, 50, 10000).setOrigin(0,0);
-        this.Bship04.moveSpeed *= 1.5; // increases the speed of this ship for added challenge
+        this.Bship04.moveSpeed *= 1.75; // increases the speed of this ship for added challenge
 
         // white borders
         this.add.rectangle(0, 0, game.config.width, borderUISize, 0xFFFFFF).setOrigin(0 ,0);
