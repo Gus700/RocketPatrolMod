@@ -21,11 +21,11 @@ class Play extends Phaser.Scene {
         this.add.rectangle(0, borderUISize + borderPadding, game.config.width, borderUISize * 2, 0x00FF00).setOrigin(0, 0);
 
         // add Spaceships (x4)
-        this.ship01 = new Spaceship(this, game.config.width + borderUISize*6, borderUISize*4, 'spaceship', 0, 30).setOrigin(0, 0);
-        this.ship02 = new Spaceship(this, game.config.width + borderUISize*3, borderUISize*5 + borderPadding*2, 'spaceship', 0, 20).setOrigin(0,0);
-        this.ship03 = new Spaceship(this, game.config.width, borderUISize*6 + borderPadding*4, 'spaceship', 0, 10).setOrigin(0,0);
+        this.ship01 = new Spaceship(this, game.config.width + borderUISize*6, borderUISize*4, 'spaceship', 0, 30, 4000).setOrigin(0, 0);
+        this.ship02 = new Spaceship(this, game.config.width + borderUISize*3, borderUISize*5 + borderPadding*2, 'spaceship', 0, 20, 2000).setOrigin(0,0);
+        this.ship03 = new Spaceship(this, game.config.width, borderUISize*6 + borderPadding*4, 'spaceship', 0, 10, 1000).setOrigin(0,0,5);
         //red ship that offers bonus points
-        this.Bship04 = new Spaceship(this, game.config.width + borderUISize*8, borderUISize*3.5, 'bonus_ship', 0, 50).setOrigin(0,0);
+        this.Bship04 = new Spaceship(this, game.config.width + borderUISize*8, borderUISize*3.5, 'bonus_ship', 0, 50, 10000).setOrigin(0,0);
         this.Bship04.moveSpeed *= 1.5; // increases the speed of this ship for added challenge
 
         // white borders
@@ -165,6 +165,7 @@ class Play extends Phaser.Scene {
         });
         // score add and repaint
         this.p1Score += ship.points;
+        this.clock.delay += ship.addTime;
         this.scoreLeft.text = this.p1Score; 
         
         this.sound.play('sfx_explosion');
