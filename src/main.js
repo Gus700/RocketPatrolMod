@@ -1,7 +1,7 @@
 /* 
 Gustavo Cruz Martinez
 Built on top of proffessor's Altice base tutorial code for rocket patrol
-Time to complete so far: 6 hours
+Time to complete so far: 7 hours
 
 Changes made, following the assignment description
 
@@ -11,7 +11,10 @@ Create a new spaceship type (w/ new artwork) that's smaller, moves faster, and i
     1.5 faster than the rest
 
 Create new artwork for all of the in-game assets (rocket, spaceships, explosion) (20)
-    had to create new pixzl art for white ships, rocket and new animation sequence for the explosion
+    had to create new pixel art for white ships, rocket and new animation sequence for the explosion
+
+Implement a new timing/scoring mechanism that adds time to the clock for successful hits (20)
+
 */
 
 
