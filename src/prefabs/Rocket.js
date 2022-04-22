@@ -26,7 +26,7 @@ class Rocket extends Phaser.GameObjects.Sprite {
         // fire button
         if((Phaser.Input.Keyboard.JustDown(keyF) && !this.isFiring) || mouseIn.buttons > 0) { // also takes into acount mouse buttons now
             this.isFiring = true;
-            if (!this.sfxRocket.isPlaying && this.isFiringsound == true) {
+            if (this.isFiringsound == true) {
                 this.sfxRocket.play();
             }
             this.isFiringsound = false;
