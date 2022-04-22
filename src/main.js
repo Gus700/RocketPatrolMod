@@ -1,7 +1,7 @@
 /* 
 Gustavo Cruz Martinez
 Built on top of proffessor's Altice base tutorial code for rocket patrol
-Time to complete so far: 15 hours
+Time to complete so far: 16 hours
 
 Changes made, following the assignment description
 
