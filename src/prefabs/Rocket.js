@@ -11,19 +11,11 @@ class Rocket extends Phaser.GameObjects.Sprite {
 
     update() {
         // left/right movement
-        if(!this.isFiring) {
+        if(!this.isFiring) { // for mouse controls
             if (mouseIn.distance > 0) {    
                 if (mouseIn.x <= game.config.width - borderUISize - this.width && mouseIn.x >= borderUISize + this.width)
                 this.x = mouseIn.x;
             }
-            // original failed code for mouse movement
-            /*if (!(mouseIn.x == this.x)) { original failed code
-                if(mouseIn.x < this.x && this.x >= borderUISize + this.width) {
-                    this.x = this.moveSpeed;
-                } else if (mouseIn.x > this.x && this.x <= game.config.width - borderUISize - this.width) {
-                    this.x += this.moveSpeed;
-                }
-            }*/
             if(keyLEFT.isDown && this.x >= borderUISize + this.width) {
                 this.x -= this.moveSpeed;
             } else if (keyRIGHT.isDown && this.x <= game.config.width - borderUISize - this.width) {
@@ -31,10 +23,10 @@ class Rocket extends Phaser.GameObjects.Sprite {
             } 
         }
         // fire button
-        if(Phaser.Input.Keyboard.JustDown(keyF) && !this.isFiring) {
+        if((Phaser.Input.Keyboard.JustDown(keyF) && !this.isFiring) || mouseIn.buttons > 0) { // also takes into acount mouse buttons now
             this.isFiring = true;
             this.sfxRocket.play();
-        }
+        } 
         // if fired, move up
         if(this.isFiring && this.y >= borderUISize * 3 + borderPadding) {
             this.y -= this.moveSpeed;

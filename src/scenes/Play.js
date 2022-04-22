@@ -60,7 +60,7 @@ class Play extends Phaser.Scene {
             fontSize: '28px',
             backgroundColor: '#F3B141',
             color: '#843605',
-            align: 'right',
+            align: 'center',
             padding: {
                 top: 5,
                 bottom: 5,
@@ -115,7 +115,7 @@ class Play extends Phaser.Scene {
         this.starfield.tilePositionX -= 4;  // update tile sprite
 
         if(!this.gameOver) {
-            console.log(mouseIn.x)
+            //console.log(mouseIn.buttons)
             this.p1Rocket.update();             // update p1
             this.ship01.update();               // update spaceship (x3)
             this.ship02.update();
