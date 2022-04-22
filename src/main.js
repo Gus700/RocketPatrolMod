@@ -26,12 +26,13 @@ Implement a new timing/scoring mechanism that adds time to the clock for success
     the corresponding ship. Gameplay also lasts realtive to the time displayed on screen
 
 Implement mouse control for player movement and mouse click to fire (20 points)
+    https://newdocs.phaser.io/docs/3.55.2/Phaser.Input.Pointer#button
     By far this is the one that I am taking the longest to research on a find out how to the cordinates for my mouse.
     I learned how to use activePointers, things like tracking their position, tracking if the pointer/cursor is in movement
     and when it is stationary so that players can use arrow keys instead, how to tell when a mouse button is being pressed 
     and applying that so that the rocket is fired upwards
 
-    
+
 */
 
 
