@@ -36,7 +36,8 @@ Create 4 new explosion SFX and randomize which one plays on impact (10)
     I really enjoyed using the software Bfrx that professor Nath recommended in his tutorial to create new game audio.
     I played around with the different sliders until I got four explosion sounds that I liked. To implement the random
     feature of the sounds, I bassically randomized the number which gets attached to the end of the tag used for each of
-    the four explosion sounds
+    the four explosion sounds. special handling was also needed so that the firing sound was not constantly repeated if 
+    the mouse button was help down.
 
 
 */
