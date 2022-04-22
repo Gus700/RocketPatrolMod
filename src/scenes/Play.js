@@ -170,6 +170,6 @@ class Play extends Phaser.Scene {
         this.clock.delay += ship.addTime;
         this.scoreLeft.text = this.p1Score; 
         
-        this.sound.play('sfx_explosion');
+        this.sound.play('sfx_expl'+Math.floor(Math.random() * 4)); // picks random out of 4 explosion sounds
       }
 }

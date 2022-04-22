@@ -32,6 +32,12 @@ Implement mouse control for player movement and mouse click to fire (20 points)
     and when it is stationary so that players can use arrow keys instead, how to tell when a mouse button is being pressed 
     and applying that so that the rocket is fired upwards
 
+Create 4 new explosion SFX and randomize which one plays on impact (10)
+    I really enjoyed using the software Bfrx that professor Nath recommended in his tutorial to create new game audio.
+    I played around with the different sliders until I got four explosion sounds that I liked. To implement the random
+    feature of the sounds, I bassically randomized the number which gets attached to the end of the tag used for each of
+    the four explosion sounds
+
 
 */
 
