@@ -18,7 +18,7 @@ class Play extends Phaser.Scene {
         this.starfield = this.add.tileSprite(0, 0, 640, 480, 'starfield').setOrigin(0, 0);
 
         // green UI background
-        this.add.rectangle(0, borderUISize + borderPadding, game.config.width, borderUISize * 2, 0x00FF00).setOrigin(0, 0);
+        this.add.rectangle(0, borderUISize + borderPadding, game.config.width, borderUISize * 2, 0x00FFF0).setOrigin(0, 0);
 
         // add Spaceships (x4)
         this.ship01 = new Spaceship(this, game.config.width + borderUISize*6, borderUISize*4, 'spaceship', 0, 30, 4000).setOrigin(0, 0);
